@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /*      typography */
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+
+    --fs-h1: 120px;
+    --fs-h2: 64px;
+    --fs-h3: 20px;
+
+    --fs-p1: 28px;
+    --fs-p2: 22px;
+    --fs-p3: 18px;
+    --fs-p4: 15px;
+    
+
+    --font-alfa: "Poppins", sans-serif;
+
+    --color-prim: #5312D6;
+    --color-white: #ffff;
+    --color-black: #464646;
+
+    --font-weight-bold: 700;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+}
+
+@media (min-width: 62em){
+    :root {
+        --fs-h1: 120px;
+        --fs-h2: 90px;
+        --fs-h3: 24px;
+    
+        --fs-p1: 42px;
+        --fs-p2: 22px;
+        --fs-p3: 20px;
+        --fs-p4: 18px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-alfa);
+    overflow-x: hidden;
+    color: var(--color-black);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+.p1 {
+    font-size: var(--fs-p1);
+}
+.p2 {
+    font-size: var(--fs-p2);
+}
+.p3 {
+    font-size: var(--fs-p3);
+}
+.p4 {
+    font-size: var(--fs-p4);
+}
+
+a {
+    color: var(--color-black);
+}
+
+a:hover {
+    color: var(--color-prim);
+    text-decoration: underline;
+}

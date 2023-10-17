@@ -1,0 +1,90 @@
+/* .hero-main {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: red;
+}
+.hero-main .hero-gif {
+    position: absolute;
+    top: 90px;
+    z-index: -1;
+} */
+
+/* HeroMain.css */
+
+.hero-main {
+    width: 100%;
+    height: 100vh;
+    height: calc(100vh - 100px);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .image {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    width: 180px;
+    height: 280px;
+  }
+  
+  .image1 {
+    top: 10%;
+    left: 5%;
+  }
+  
+  .image3 {
+    top: 25%;
+    left: 59%;
+    z-index: -1;
+    filter: grayscale(1);
+  }
+
+  .hero-context {
+    width: 100%;
+    height: calc(100vh - 450px);
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+
+  .hero-context h1 {
+    line-height: 80px;
+    mix-blend-mode: difference;
+  }
+
+  @media (min-width: 62em){
+
+    .image {
+        width: 284px;
+        height: 504px;
+    }
+    .image3 {
+        height: 410px;
+        left: 75%;
+    }
+    .hero-context {
+        height: calc(100vh - 100px);
+        text-align: left;
+      }
+      .hero-context h1 {
+        line-height: 90px;
+      }
+      .hero-context p {
+        text-align: end;
+      }
+  }
+
+  
+  

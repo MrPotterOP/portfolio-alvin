@@ -1,0 +1,45 @@
+.work-container {
+    display: grid;
+    align-items: start;
+}
+
+.work-container .work-context {
+    position: sticky;
+    top: 0;
+    z-index: -2;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+.works {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 120px;
+}
+
+.works img {
+    border-radius: 40px;
+    width: 420px;
+}
+
+.works img:nth-child(odd) {
+    align-self: flex-start;
+  }
+  
+  /* Alternate alignment for even-indexed images (2, 4, 6) */
+.works img:nth-child(even) {
+    align-self: flex-end;
+  }
+
+@media (min-width: 62em){
+    .works {
+        padding: 40px 60px;
+        gap: 240px;
+    }
+    .works img {
+        width: 980px;
+    }
+}
+
