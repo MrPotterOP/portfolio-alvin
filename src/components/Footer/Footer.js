@@ -16,7 +16,7 @@ const Footer = ()=>{
         e.preventDefault();
 
         setData({msg: "Sending...", disabled: true})
-        axios.post("https://angry-duck-sunglasses.cyclic.app/api/contact", details)
+        axios.post("https://angry-duck-sunglasses.cyclic.app/api/contactalvin", details)
         .then(r => (r.status === 200) ? setData({msg: "Msg Sent 👍", disabled: true}) : null)
         .catch(e => (e.response) ? setData({msg: "Try Again With Valid Info.", disabled: false}) : null)
     }
