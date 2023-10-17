@@ -49,7 +49,6 @@ const Hero = () => {
             Alvin Lucien
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 50 }}
             animate={textAnimation}
             className="p2"
           >

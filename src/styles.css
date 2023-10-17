@@ -89,3 +89,10 @@ a:hover {
     color: var(--color-prim);
     text-decoration: underline;
 }
+
+.loading {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
