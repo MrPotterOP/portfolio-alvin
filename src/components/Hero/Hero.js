@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useAnimation, motion } from "framer-motion";
 import Navbar from "../Navbar/Navbar";
 import "./hero.css";
@@ -25,18 +25,6 @@ const Hero = () => {
     })
   };
 
-  const revealText = () => {
-    textAnimation.start({
-      opacity: 1,
-      y: 0,
-      transition: { duration: 1 }
-    });
-  };
-
-  useEffect(() => {
-    revealText();
-  }, []);
-
   return (
     <section id="hero">
       <Navbar />
@@ -57,7 +45,7 @@ const Hero = () => {
           ></motion.div>
         </div>
         <div className="hero-context">
-          <motion.h1 initial={{ opacity: 0, y: 100 }} animate={textAnimation}>
+          <motion.h1 animate={textAnimation}>
             Alvin Lucien
           </motion.h1>
           <motion.p
