@@ -46,7 +46,7 @@ const Services = () => {
             <hr/>
 
             <motion.div
-              onMouseMove={e => {mouseOver(e, "/images/hov2.gif")}}
+              onMouseMove={e => {mouseOver(e, "/images/gif2.gif")}}
               onHoverEnd={e => {mouseExit()}}
              className='service'>
                 <img alt='icon' src='/images/icon2.png'></img>
